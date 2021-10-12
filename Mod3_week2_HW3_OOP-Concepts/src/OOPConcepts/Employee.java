@@ -11,7 +11,8 @@ public class Employee extends Person {
 	
 	// empty constructor: 
 	public Employee(){
-		
+		// unsure if this works:
+		id++;
 	}
 	
 	Employee(String firstName, String lastName, int age, char gender, int id, int salary, int bonus, boolean retired){
@@ -24,11 +25,20 @@ public class Employee extends Person {
 	
 	// Scanner boiler plate: 
 	public void scanner() {
-	
-	// get user input: 
 	Scanner scan = new Scanner(System.in);
-	System.out.println("What's your first Name?");
+		
+	// get user input: 
+	System.out.println("Employee's first name: ");
 	firstName = scan.next();
-
+	
+	System.out.println("Employee's last name: ");
+	lastName = scan.next();
+	
+	System.out.println("Employee's age: ");
+	age = scan.nextInt();
+	
+	System.out.println("Employee's gender: ");
+	gender = scan.next().charAt(0);
+		
 	}
 }

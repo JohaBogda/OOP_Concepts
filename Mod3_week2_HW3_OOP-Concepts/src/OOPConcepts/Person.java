@@ -2,6 +2,7 @@ package OOPConcepts;
 
 public class Person {
 	
+	// declare variables
 	String firstName;
 	String lastName;
 	int age;

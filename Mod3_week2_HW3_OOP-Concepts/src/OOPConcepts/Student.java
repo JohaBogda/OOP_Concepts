@@ -15,5 +15,22 @@ public class Student extends Person {
 		this.neededCredits = neededCredits;
 	}
 	
-
+	// Scanner boiler plate: 
+	public void scanner() {
+	
+	// get user input: 
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Student's first name: ");
+	firstName = scan.next();
+	
+	System.out.println("Student's last name: ");
+	lastName = scan.next();
+	
+	System.out.println("Student's age: ");
+	age = scan.nextInt();
+	
+	System.out.println("Student's gender: ");
+	gender = scan.next().charAt(0);
+	
+	}
 }
