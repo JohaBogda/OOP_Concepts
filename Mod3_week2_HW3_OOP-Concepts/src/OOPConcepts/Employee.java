@@ -2,7 +2,7 @@ package OOPConcepts;
 
 import java.util.Scanner;
 
-public class Employee extends Person {
+public class Employee extends Person implements Interface {
 
 	int id; 
 	int salary;
@@ -41,4 +41,18 @@ public class Employee extends Person {
 	gender = scan.next().charAt(0);
 		
 	}
+	
+	//calculate salary using Interface: 
+    // changing int into a double
+public double calculate(int bonus) {
+	
+	double netsalary = bonus + this.salary;
+	return netsalary;
+	
 }
+
+	public void display() {
+		super.display();
+		System.out.println("Employee ID : " + this.id);
+		System.out.println("Employee Salary : $" + calculate(this.bonus));
+}}

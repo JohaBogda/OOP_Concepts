@@ -6,18 +6,18 @@ import java.util.Scanner;
 public class Person1 {
 
 	// private variable: 
-	private int SSN;
+	private int ssn;
 	private int phone;
 	
 	
 	// getter:
-	public int getSSN() {
-		return SSN;
+	public int getSsn() {
+		return ssn;
 	}
 	
 	// setter:
-	public void setSSN(int SSN) {
-		this.SSN = SSN;
+	public void setSsn(int ssn) {
+		this.ssn = ssn;
 	}
 
 	public int getPhone() {
@@ -33,13 +33,15 @@ public class Person1 {
 	Person1 person = new Person1();
 	
 	System.out.println("Enter Person1 SSN : ");
-	person.setSSN(scan.nextInt());
+	person.setSsn(scan.nextInt());
 
 	System.out.println("Enter Person1 phone number: ");
-	
+	person.setPhone(scan.nextInt());
 
-	public static void main(String[] args) {
+	System.out.println("Person1 SSN :" + person.getSsn());
+    System.out.println("Person1 Phone :" + person.getPhone());
 
-	}
-
+    void display() {
+    	
+    }
 }
